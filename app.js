@@ -19,10 +19,6 @@ exibirMensagemInicial();
 function verificarChute() {
     
     let chute = document.querySelector('input').value;
-  //  if (chute < 1 && chute > 10) {
-   //     exibirTexto('p', 'Chute inválido! O número deve estar entre 1 e 10.');
-//        return;
- //   }
     if (chute == numero) {
         exibirTexto('h1', 'Parabéns!');
         let palavraTentativas = tentativas == 1 ? 'tentativa' : 'tentativas';
