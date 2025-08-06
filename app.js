@@ -20,6 +20,11 @@ exibirMensagemInicial();
 function verificarChute() {
     
     let chute = document.querySelector('input').value;
+    if ( chute == '' || chute < 1 || chute > 10 || isNaN(chute)) {
+        exibirTexto('p', 'Valor inválido. Digite um número entre 1 e 10.');
+        limparCampo();
+        return;
+    }
     if (chute == numero) {
         exibirTexto('h1', 'Parabéns!');
         let palavraTentativas = tentativas == 1 ? 'tentativa' : 'tentativas';
