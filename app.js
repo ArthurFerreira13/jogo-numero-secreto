@@ -12,7 +12,7 @@ function exibirTexto(tag, texto) {
 
 function exibirMensagemInicial(){
  exibirTexto('h1', 'Hora do Desafio');
- exibirTexto('p', 'Descubra o número secreto entre 1 e 10');
+ exibirTexto('p', 'Descubra o número secreto entre 1 e 100');
 }
 exibirMensagemInicial();
 
@@ -40,7 +40,7 @@ function verificarChute() {
 }
 
 function numeroSecreto() {
-    let numeroEscolhido = parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 100 + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
     if (quantidadeDeElementosNaLista == 3){
         listaDeNumerosSorteados = [];
