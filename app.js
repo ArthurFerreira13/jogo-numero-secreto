@@ -11,6 +11,7 @@ function exibirTexto(tag, texto) {
 }
 
 function exibirMensagemInicial(){
+
  exibirTexto('h1', 'Hora do Desafio');
  exibirTexto('p', 'Descubra o número secreto entre 1 e 10');
 }
