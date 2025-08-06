@@ -46,6 +46,7 @@ function verificarChute() {
     }
 }
 
+// teste deletar commit
 function numeroSecreto() {
     let numeroEscolhido = parseInt(Math.random() * 10 + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
