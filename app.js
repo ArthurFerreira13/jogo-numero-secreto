@@ -12,12 +12,17 @@ function exibirTexto(tag, texto) {
 
 function exibirMensagemInicial(){
  exibirTexto('h1', 'Hora do Desafio');
- exibirTexto('p', 'Descubra o número secreto entre 1 e 100');
+ exibirTexto('p', 'Descubra o número secreto entre 1 e 10');
 }
 exibirMensagemInicial();
 
 function verificarChute() {
+    
     let chute = document.querySelector('input').value;
+  //  if (chute < 1 && chute > 10) {
+   //     exibirTexto('p', 'Chute inválido! O número deve estar entre 1 e 10.');
+//        return;
+ //   }
     if (chute == numero) {
         exibirTexto('h1', 'Parabéns!');
         let palavraTentativas = tentativas == 1 ? 'tentativa' : 'tentativas';
@@ -40,9 +45,9 @@ function verificarChute() {
 }
 
 function numeroSecreto() {
-    let numeroEscolhido = parseInt(Math.random() * 100 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 10 + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
-    if (quantidadeDeElementosNaLista == 3){
+    if (quantidadeDeElementosNaLista == 10){
         listaDeNumerosSorteados = [];
         console.log('Lista de números sorteados foi reiniciada.');
     }
