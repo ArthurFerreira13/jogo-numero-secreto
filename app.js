@@ -67,6 +67,7 @@ function limparCampo() {
     chute = document.querySelector('input');
     chute.value = '';
 }
+
 function reiniciarJogo() {
     numero = numeroSecreto();
     tentativas = 1;
